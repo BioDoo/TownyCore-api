@@ -6,15 +6,15 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
-sourceCompatibility = 8
-targetCompatibility = 8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 group 'com.github.hodongwook'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    mavenLocal()
+    maven { url = 'https://maven.elmakers.com/repository/' }
 }
 
 dependencies {
@@ -25,12 +25,7 @@ dependencies {
     compileOnly "org.projectlombok:lombok:1.18.24"
     annotationProcessor "org.projectlombok:lombok:1.18.24"
 
-    compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT"
-}
-
-java {
-    withSourcesJar()
-    withJavadocJar()
+    compileOnly 'org.bukkit:bukkit:1.12.2-R0.1-SNAPSHOT'
 }
 
 publishing {
