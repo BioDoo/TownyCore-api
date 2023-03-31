@@ -22,7 +22,6 @@ dependencies {
 }
 ```
 ### - Adapter
-[테스트 코드](https://github.com/StarlyTowny/ST-TownyCore/blob/main/ST-TownyCore-api/src/test/java/kr/jb/test/AdapterTest.java)
  1. Create Custom Adapter Class
 ```java
 public final class RegionLevelAdapter extends RegionAdapter implements Savable, CommandExecutable {
@@ -75,7 +74,6 @@ public class TestPlugin extends JavaPlugin {
 }
  ```
 ### - RegionManager & Region Example
-[테스트 코드](https://github.com/StarlyTowny/ST-TownyCore/blob/main/ST-TownyCore-api/src/test/java/kr/jb/test/RegionTest.java)
 ```java
 public class TestClass {
 
